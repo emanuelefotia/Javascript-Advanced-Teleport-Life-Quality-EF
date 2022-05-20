@@ -7,7 +7,7 @@ const categories = document.getElementById("cat");
 const score = document.getElementById("score");
 
 //apro la funzione per mandare la richiesta alle API di teleport
-const teleport = async function(city){
+const api = async function(city){
   const request = await axios
   .get("https://api.teleport.org/api/urban_areas/slug:"+city+"/scores/")
   .then(response => response);
@@ -58,7 +58,7 @@ search.addEventListener("click", async function () {
   sum.innerHTML = " ";
   categories.innerHTML = " ";
   score.innerHTML = " ";
-  teleport(city.value);
+  api(city.value);
 });
 
 //ripulisce il form e refresha la pagina
