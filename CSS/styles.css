@@ -1,0 +1,26 @@
+.container-fluid{
+  display: flex;
+  justify-content: center;
+  max-width: 20rem;
+}
+
+nav.navbar:nth-child(1){
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  margin-top: 1rem;
+  justify-content: center;
+  text-align: center
+}
+
+.para{
+  justify-content: center;
+  text-align: center;
+}
+
+
+#city{
+  margin-left: 0.48rem;
+}
